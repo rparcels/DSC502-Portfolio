@@ -24,5 +24,6 @@ a:hover {color: green;}
 
 .container a {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 20px;,
+    text-align: center;
 }
