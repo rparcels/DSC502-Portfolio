@@ -1,0 +1,9 @@
+p {color: blue;}
+
+#special {color: red;}
+
+.warning {color: orange;}
+
+img[src] {border: 2px solid black;}
+
+a:hover {color: green;}
