@@ -23,7 +23,7 @@ a:hover {color: green;}
 }
 
 .container a {
-    display: inline-block;
+    display: block;
     margin-top: 30px;,
     text-align: center;
 }
