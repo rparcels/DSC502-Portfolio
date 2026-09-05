@@ -9,7 +9,84 @@
     <p>Hello world</p>
     <p id="special">This is a test</p>
     <p class="warning">This is another test!</p>
-    <img src="cat.png">
+    <div id="vis"></div>
     <a href="#">Click me</a>
+      <script>
+        {"vconcat": [
+          {
+            "hconcat": [
+              {"width": 150,
+              "height": 150,
+                "data": {
+                  "values": [
+                    {"a": "C", "b": 2}, {"a": "C", "b": 7}, {"a": "C", "b": 4},
+                    {"a": "D", "b": 1}, {"a": "D", "b": 2}, {"a": "D", "b": 6},
+                    {"a": "E", "b": 8}, {"a": "E", "b": 4}, {"a": "E", "b": 7}
+                  ]
+                },
+                "mark": "square",
+                "encoding": {
+                  "x": {"field": "a", "type": "nominal"},
+                  "y": {"field": "b", "type": "quantitative"}
+                }
+              },
+        
+              {"width": 150,
+              "height": 150, 
+                "data": {
+                  "values": [
+                    {"a": "C", "b": 2}, {"a": "C", "b": 7}, {"a": "C", "b": 4},
+                    {"a": "D", "b": 1}, {"a": "D", "b": 2}, {"a": "D", "b": 6},
+                    {"a": "E", "b": 8}, {"a": "E", "b": 4}, {"a": "E", "b": 7}
+                  ]
+                },
+                "mark": "square",
+                "encoding": {
+                  "x": {"field": "a", "type": "nominal"},
+                  "y": {"aggregate": "average","field": "b", "type": "quantitative","title" : "Mean of B"}
+                }
+              }
+            ]
+          },
+        
+          {
+            "hconcat": [
+              {"width": 150,
+              "height": 150,
+                "data": {
+                  "values": [
+                    {"a": "C", "b": 2}, {"a": "C", "b": 7}, {"a": "C", "b": 4},
+                    {"a": "D", "b": 1}, {"a": "D", "b": 2}, {"a": "D", "b": 6},
+                    {"a": "E", "b": 8}, {"a": "E", "b": 4}, {"a": "E", "b": 7}
+                  ]
+                },
+                "mark": "circle",
+                "encoding": {
+                  "y": {"field": "a", "type": "nominal"},
+                  "x": {"field": "b", "type": "quantitative"}
+                }
+              },
+        
+              {"width": 150,
+              "height": 150, 
+                "data": {
+                  "values": [
+                    {"a": "C", "b": 2}, {"a": "C", "b": 7}, {"a": "C", "b": 4},
+                    {"a": "D", "b": 1}, {"a": "D", "b": 2}, {"a": "D", "b": 6},
+                    {"a": "E", "b": 8}, {"a": "E", "b": 4}, {"a": "E", "b": 7}
+                  ]
+                },
+                "mark": "circle",
+                "encoding": {
+                  "y": {"field": "a", "type": "nominal"},
+                  "x": {"aggregate": "average","field": "b", "type": "quantitative"}
+                }
+              }
+            ]
+          }
+        ]
+        }
+      </script>
+    vegaEmbed('#vis', spec);
   </body>
 </html>
