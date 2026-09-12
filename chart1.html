@@ -5,11 +5,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    <style>
+        /* Make the entire page use the gradient background */
+        body,
+        .main,
+        .container {
+            background: transparent !important;
+        }
+    </style>
 </head>
 
 <body class="is-preload">
@@ -21,9 +30,9 @@
         </div>
     </section>
 
-    <!-- Chart Section (removes white background) -->
-    <section class="main style1 special">
-        <div class="container">
+    <!-- Chart Section (transparent background) -->
+    <section id="chart-area">
+        <div class="inner">
             <div id="chart1"></div>
         </div>
     </section>
@@ -39,4 +48,5 @@
 
 </body>
 </html>
+
 
