@@ -10106,3 +10106,4 @@ const chart1Spec = {
 
 
 };
+vegaEmbed('#chart1', chart1Spec, { actions: false });
