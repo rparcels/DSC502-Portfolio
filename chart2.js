@@ -1,5 +1,4 @@
 const chart2Spec = {
-  {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json",
   "config": {
     "view": {
