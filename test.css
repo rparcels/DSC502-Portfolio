@@ -30,6 +30,9 @@ a:hover {color: green;}
 
 hr {
   border: 0;
-  border-top: 1px solid #ccc;
+  width: 98%;
+  height: 2px;
+  background: linear-gradient(to right, #ddd, #999, #ddd);
   margin: 2rem 0;
 }
+
