@@ -10108,3 +10108,4 @@ const chart2Spec = {
   "width": 600
 };
 vegaEmbed('#chart2', chart2Spec, { actions: false });
+
