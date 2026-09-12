@@ -8,7 +8,7 @@ const chart1Spec = {
       "continuousHeight": 300,
       "continuousWidth": 300
     }
-    },
+  },
   "data": {
     "name": "data-69d721effa670beb4517eaf06f508930"
   },
