@@ -197,7 +197,7 @@ input, select, textarea {
 	}
 
 		hr.major {
-			margin: 3em 0;
+			margin: 3em auto;
 		}
 
 	blockquote {
