@@ -1,5 +1,8 @@
 const chart2Spec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json",
+  width: "container",
+  height: 300,
+  autosize: { type: "fit", contains: "padding" },
   "config": {
     "view": {
       "continuousHeight": 300,
