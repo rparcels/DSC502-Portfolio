@@ -10106,5 +10106,5 @@ const chart2Spec = {
   ],
   "title": "0-60 Times vs. Horsepower",
   "width": 600
-}
+};
 vegaEmbed('#chart2', chart2Spec, { actions: false });
