@@ -1,8 +1,5 @@
 const chart3Spec = {
-  "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json",
-  width: "container",
-  height: 300,
-  autosize: { type: "fit", contains: "padding" },
+  {"$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json",
   "config": {
     "view": {
       "continuousHeight": 300,
@@ -10081,6 +10078,9 @@ const chart3Spec = {
     },
     "y": {
       "field": "Horsepower",
+      "scale": {
+        "type": "log"
+      },
       "title": "Horsepower",
       "type": "quantitative"
     }
@@ -10106,7 +10106,5 @@ const chart3Spec = {
   ],
   "title": "0-60 Times vs. Horsepower",
   "width": 600
-
-
-};
+}
 vegaEmbed('#chart3', chart3Spec, { actions: false });
