@@ -10103,6 +10103,6 @@ const chart1Spec = {
   ],
   "title": "0-60 Times vs. Horsepower",
   "width": 600
-}
+
 
 };
