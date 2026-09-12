@@ -1,8 +1,5 @@
-const chart2Spec = {
+{
   "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json",
-  width: "container",
-  height: 300,
-  autosize: { type: "fit", contains: "padding" },
   "config": {
     "view": {
       "continuousHeight": 300,
@@ -10076,12 +10073,12 @@ const chart2Spec = {
       }
     ],
     "x": {
-      "field": "0-60 MPH (seconds)",
+      "field": "Horsepower",
+      "title": "Horsepower",
       "type": "quantitative"
     },
     "y": {
-      "field": "Horsepower",
-      "title": "Horsepower",
+      "field": "0-60 MPH (seconds)",
       "type": "quantitative"
     }
   },
@@ -10106,7 +10103,4 @@ const chart2Spec = {
   ],
   "title": "0-60 Times vs. Horsepower",
   "width": 600
-
-
-};
-vegaEmbed('#chart2', chart2Spec, { actions: false });
+}
