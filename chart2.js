@@ -1,11 +1,13 @@
-{
+const chart1Spec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json",
+  width: "container",
+  height: 300,
+  autosize: { type: "fit", contains: "padding" },
   "config": {
     "view": {
       "continuousHeight": 300,
       "continuousWidth": 300
     }
-  },
   "data": {
     "name": "data-69d721effa670beb4517eaf06f508930"
   },
