@@ -42,7 +42,30 @@
 							<header class="major">
 								<h2>Details<br /></h2>
 							</header>
-							<p>Data.<br />Data.<br />Data.<br />Data.<br /></p>
+							<p>
+								import pandas as pd
+								import altair as alt
+								
+								#Load Dataset
+								cars = pd.read_excel("C:/Users/Ricky/Downloads/DSC502 Car Dataset.xlsx")
+								
+								#Convert numerical data (2.0L, 6.4L, etc.) to categorical ("ICE")
+								cars.loc[cars['Powertrain'].apply(lambda x: isinstance(x, (int, float))), 'Powertrain'] = "ICE"
+								
+								chart = (
+								    alt.Chart(cars)
+								    .mark_circle(size=60, opacity=0.7)
+								    .encode(
+								        x=alt.X("0-60 MPH (seconds)"), #Q for quantitative
+								        y=alt.Y("Horsepower:Q", title="Horsepower",scale=alt.Scale(type='log')),
+								        color=alt.Color("Powertrain:N"), #N for nominal (categorical)
+								        tooltip=["Car Model:N", "0-60 MPH (seconds):Q", "Horsepower:Q"],
+								    )
+								    .properties(width=600, height=360, title="0-60 Times vs. Horsepower")
+								    .interactive()
+								)
+								chart	
+							</p>
 						</div>
 					</div>
 				</div>
