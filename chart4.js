@@ -10058,28 +10058,42 @@ const chart4Spec = {
   },
   "encoding": {
     "color": {
-      "field": "Powertrain",
-      "type": "nominal"
+      "aggregate": "count",
+      "scale": {
+        "scheme": "viridis"
+      },
+      "title": "Density",
+      "type": "quantitative"
     },
     "tooltip": [
       {
-        "field": "Car Model",
-        "type": "nominal"
+        "aggregate": "count",
+        "title": "Cars in bin",
+        "type": "quantitative"
       },
       {
         "field": "0-60 MPH (seconds)",
+        "title": "Accel (bin)",
         "type": "quantitative"
       },
       {
         "field": "Horsepower",
+        "title": "HP (bin)",
         "type": "quantitative"
       }
     ],
     "x": {
+      "bin": {
+        "maxbins": 30
+      },
       "field": "0-60 MPH (seconds)",
+      "title": "0–60 MPH (seconds)",
       "type": "quantitative"
     },
     "y": {
+      "bin": {
+        "maxbins": 30
+      },
       "field": "Horsepower",
       "title": "Horsepower",
       "type": "quantitative"
@@ -10087,26 +10101,9 @@ const chart4Spec = {
   },
   "height": 360,
   "mark": {
-    "opacity": 0.7,
-    "size": 60,
-    "type": "circle"
+    "type": "rect"
   },
-  "params": [
-    {
-      "bind": "scales",
-      "name": "param_1e9efca18e7a2868",
-      "select": {
-        "encodings": [
-          "x",
-          "y"
-        ],
-        "type": "interval"
-      }
-    }
-  ],
-  "title": "0-60 Times vs. Horsepower",
+  "title": "Heatmap: Density of Cars by HP vs 0–60 Time",
   "width": 600
-
-
-};
+}
 vegaEmbed('#chart4', chart4Spec, { actions: false });
