@@ -73,6 +73,12 @@ input, select, textarea {
 }
 
 /* Basic */
+	.chart-card {
+	    background: white;
+	    padding: 20px;
+	    border-radius: 12px;
+	    box-shadow: 0 0 25px rgba(0, 0, 0, 0.12);
+	}
 
 	html {
 		box-sizing: border-box;
@@ -3515,10 +3521,4 @@ input, select, textarea {
 
 	}
 
-.chart-card {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.12);
-}
 
