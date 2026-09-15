@@ -72,6 +72,10 @@ input, select, textarea {
 	appearance: none;
 }
 
+.vega-embed {
+	width: 100%
+}
+
 /* Basic */
 
 	/*.chart-card {
