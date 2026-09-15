@@ -10059,7 +10059,6 @@ const chart2Spec = {
   "encoding": {
     "color": {
       "field": "Powertrain",
-      "legend": null,
       "scale": {
         "scheme": "tableau10"
       },
@@ -10067,15 +10066,14 @@ const chart2Spec = {
     },
     "size": {
       "field": "Price (in USD)",
-      "legend": null,
       "type": "quantitative"
     },
     "x": {
-      "field": "Horsepower",
+      "field": "0-60 MPH (seconds)",
       "type": "quantitative"
     },
     "y": {
-      "field": "0-60 MPH (seconds)",
+      "field": "Horsepower",
       "type": "quantitative"
     }
   },
