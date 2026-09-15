@@ -72,6 +72,11 @@ input, select, textarea {
 	appearance: none;
 }
 
+.vega-embed {
+    height: auto !important;
+    overflow: visible !important;
+}
+
 
 
 /* Basic */
