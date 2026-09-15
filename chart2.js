@@ -10092,6 +10092,7 @@ const chart2Spec = {
         "type": "interval"
       }
     }
-  ]
+  ],
+  "title": "0–60 Time vs Horsepower"
 }
 vegaEmbed('#chart2', chart2Spec, { actions: false });
