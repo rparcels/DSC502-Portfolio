@@ -10059,25 +10059,17 @@ const chart2Spec = {
   "encoding": {
     "color": {
       "field": "Powertrain",
+      "scale": {
+        "scheme": "tableau10"
+      },
       "type": "nominal"
     },
-    "tooltip": [
-      {
-        "field": "Car Model",
-        "type": "nominal"
-      },
-      {
-        "field": "0-60 MPH (seconds)",
-        "type": "quantitative"
-      },
-      {
-        "field": "Horsepower",
-        "type": "quantitative"
-      }
-    ],
+    "size": {
+      "field": "Price (in USD)",
+      "type": "quantitative"
+    },
     "x": {
       "field": "Horsepower",
-      "title": "Horsepower",
       "type": "quantitative"
     },
     "y": {
@@ -10085,11 +10077,8 @@ const chart2Spec = {
       "type": "quantitative"
     }
   },
-  "height": 360,
   "mark": {
-    "opacity": 0.7,
-    "size": 60,
-    "type": "circle"
+    "type": "point"
   },
   "params": [
     {
@@ -10103,9 +10092,6 @@ const chart2Spec = {
         "type": "interval"
       }
     }
-  ],
-  "title": "0-60 Times vs. Horsepower",
-  "width": 600
-};
+  ]
+}
 vegaEmbed('#chart2', chart2Spec, { actions: false });
-
