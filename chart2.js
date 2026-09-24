@@ -10056,6 +10056,10 @@ const chart2Spec = {
       }
     ]
   },
+  transform: [
+  { filter: "isNumber(datum['0-60 MPH (seconds)'])" },
+  { filter: "isNumber(datum['Price (in USD)'])" }
+],
   "encoding": {
     "color": {
       "field": "Powertrain",
