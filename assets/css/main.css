@@ -78,7 +78,7 @@ input, select, textarea {
 }
 
 #chart2 {
-    height: auto !important;
+    min-height: 400px;
 }
 
 
