@@ -5,7 +5,7 @@ const fixedVisualizationSpec = {
     "type": "fit-x",
     "contains": "padding"
   },
-  "width": "container",
+  "width": 600,
 
   "height": 300,
   "config": {
@@ -131,5 +131,5 @@ const fixedVisualizationSpec = {
     }
   ],
   "title": "Typical Caffeine Content by Beverage"
-}
+};
 vegaEmbed('#fixedVisualization', fixedVisualizationSpec, { actions: false });
