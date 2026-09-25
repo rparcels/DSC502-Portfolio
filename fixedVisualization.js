@@ -1,12 +1,9 @@
 const fixedVisualizationSpec = {
-  "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json",
-
-  "width": "container",
-  "autosize": { "type": "fit", "contains": "padding" },
-  
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", 
   "config": {
     "view": {
-      "continuousHeight": 300
+      "continuousHeight": 300,
+      "continuousWidth": 300,
     }
   },
   "data": {
@@ -129,6 +126,7 @@ const fixedVisualizationSpec = {
       }
     }
   ],
-  "title": "Typical Caffeine Content by Beverage"
+  "title": "Typical Caffeine Content by Beverage",
+  "width: 600
 }
 vegaEmbed('#fixedVisualization', fixedVisualizationSpec, { actions: false });
