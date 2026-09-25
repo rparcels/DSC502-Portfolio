@@ -85,6 +85,12 @@ input, select, textarea {
     text-align: center;
 }
 
+#fixedVisualization {
+  width: 100%;       /* Forces container to grow and shrink with the browser window */
+  display: block;    /* Ensures it acts as a structural block element */
+  box-sizing: border-box;
+}
+
 
 /* Basic */
 
