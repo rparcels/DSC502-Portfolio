@@ -8,7 +8,7 @@ const fixedVisualizationSpec = {
   },
   "width": "container",
 
-  "height": 300,
+  "height": 500,
   "config": {
     "view": {
       "continuousHeight": 300
