@@ -1,9 +1,16 @@
 const fixedVisualizationSpec = {
-  "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", 
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json",
+
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
+  "width": "container",
+
+  "height": 300,
   "config": {
     "view": {
-      "continuousHeight": 300,
-      "continuousWidth": 300,
+      "continuousHeight": 300
     }
   },
   "data": {
