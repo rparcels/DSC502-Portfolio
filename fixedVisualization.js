@@ -133,7 +133,6 @@ const fixedVisualizationSpec = {
       }
     }
   ],
-  "title": "Typical Caffeine Content by Beverage",
-  "width: 600
+  "title": "Typical Caffeine Content by Beverage"
 }
 vegaEmbed('#fixedVisualization', fixedVisualizationSpec, { actions: false });
