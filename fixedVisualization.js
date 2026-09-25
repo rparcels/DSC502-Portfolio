@@ -108,6 +108,8 @@ const fixedVisualizationSpec = {
     }
   },
   "height": 300,
+  "width": "container",
+  "autosize": { "type": "fit", "contains": "padding" },
   "mark": {
     "type": "bar"
   },
